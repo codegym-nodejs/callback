@@ -10,6 +10,8 @@ Bài 1:
     ..................
   }
 
+  {even: 1, odd: 2}
+
 Bài 2:
 Kiểm tra số phần kiểu x có nhiều hơn số phần tử kiểu y hay không;
 
