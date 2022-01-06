@@ -6,11 +6,20 @@ Bài 1:
     else return 'odd';
   }))
 
-  function count() {
+  function count(arr, callback) {
     ..................
   }
 
   {even: 1, odd: 2}
+
+Solution: 
+  function count(arr, callback) {
+    return arr.reduce((obj, item)=> {
+      let result = callback(item);
+      obj[result] ? (obj[result] = obj[result] + 1) : obj[result] = 1  
+      return obj;
+    }, Object.create(null))
+  }
 
 Bài 2:
 Kiểm tra số phần kiểu x có nhiều hơn số phần tử kiểu y hay không;
